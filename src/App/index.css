@@ -30,7 +30,7 @@ code {
 .container__main {
   height: 100vh;
   width: 100vw;
-  background-color: #0099ff;
+  background-color: #b3e0ff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,6 +46,7 @@ code {
   justify-content: space-evenly;
   background-color: white;
   border-radius: 2rem;
+  border: 2px solid black;
 }
 
 .container__inputs {
@@ -85,15 +86,16 @@ code {
 
 .btn__login {
   height: 3.5rem;
-  width: 30rem;
+  width: 40rem;
   border-radius: 4rem;
   color: white;
   background-color: #0099ff;
-  border: 2px solid black;
+  border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid black;
 }
 
 /* ---------------------- animations ---------------------- */

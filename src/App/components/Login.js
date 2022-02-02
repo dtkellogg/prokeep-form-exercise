@@ -38,7 +38,7 @@ export default function Login() {
     } else {
       passwordRef.current.focus()
     }
-    
+
     setSubmitting(false)
   }
 
@@ -48,7 +48,7 @@ export default function Login() {
 
   return (
     <form className="container__login" onSubmit={(e) => handleSubmit(e)}>
-      <h1 className="header__login">Login</h1>
+      <h1 className="header__login">Welcome back</h1>
       <div className="container__inputs">
         <label className="label__email" htmlFor="input-email">Email:</label>
         <input className="input__email" name="email" type="email" id="input-email" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} ref={emailRef}/>
