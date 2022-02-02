@@ -8,12 +8,12 @@ const validUser = {
   password: '*'
 }
 
-const invalidUserEmail = {
+const invalidEmail = {
   email: 'test.com',
   password: '*'
 }
 
-const invalidUserPassword = {
+const invalidPassword = {
   email: 'test@example.com',
   password: ''
 }
@@ -24,9 +24,9 @@ describe('Testing if valid/invalid data works as expected', () => {
     expect(Validate(validUser.email, validUser.password, addToast)).toBe(true)
   })
   test('Form is submitted with an invalid email', () => {
-    expect(Validate(invalidUserEmail.email, invalidUserEmail.password, addToast)).toBe(false)
+    expect(Validate(invalidEmail.email, invalidEmail.password, addToast)).toBe(false)
   })
   test('Form is submitted with an invalid password', () => {
-    expect(Validate(invalidUserPassword.email, invalidUserPassword.password, addToast)).toBe(false)
+    expect(Validate(invalidPassword.email, invalidPassword.password, addToast)).toBe(false)
   })
 })
