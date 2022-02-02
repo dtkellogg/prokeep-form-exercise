@@ -122,6 +122,7 @@ code {
 
 .link__register {
   color: #0099ff;
+  cursor: pointer;
 }
 
 .link__forgot-password {
@@ -129,7 +130,7 @@ code {
   font-size: 1.25rem;
   align-self: start;
   margin: 1.5rem 0 0 0rem;
-  /* margin-top: 1.5rem; */
+  cursor: pointer;
 }
 
 .btn__login {
