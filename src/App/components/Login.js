@@ -48,13 +48,14 @@ export default function Login() {
 
   return (
     <form className="container__login" onSubmit={(e) => handleSubmit(e)}>
-      <h1 className="header__login">Welcome back</h1>
-      <div className="container__inputs">
+      <h1 className="header__login">Welcome Back!</h1>
+      <section className="container__inputs">
         <label className="label__email" htmlFor="input-email">Email:</label>
         <input className="input__email" name="email" type="email" id="input-email" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} ref={emailRef}/>
         <label className="label__password" htmlFor="input-password">Password:</label>
         <input className="input__password" name="password" type="password" id="input-password" value={password} placeholder="Password" onChange={(e) => setPassword(e.target.value)} ref={passwordRef}/>
-      </div>
+        <a className="link__forgot-password">Forgot password?</a>
+      </section>
       <button className="btn__login" type="submit" disabled={submitting}>
         {!submitting ? (
           "Login"
@@ -68,6 +69,7 @@ export default function Login() {
           />
         )}
       </button>
+      <span className="to-register">Need an account? <a className="link__register">Register</a></span>
     </form>
   )
 }

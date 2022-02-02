@@ -30,7 +30,7 @@ code {
 .container__main {
   height: 100vh;
   width: 100vw;
-  background-color: #b3e0ff;
+  background-color: #D6E7FF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,6 @@ code {
   justify-content: space-evenly;
   background-color: white;
   border-radius: 2rem;
-  border: 2px solid black;
 }
 
 .container__inputs {
@@ -55,7 +54,6 @@ code {
   align-items: center;
   justify-content: center;
   width: 40rem;
-  margin-bottom: 3rem;
 }
 
 /* ---------------------- form (inputs && labels) ---------------------- */
@@ -80,12 +78,13 @@ code {
 .input__email:focus, .input__password:focus {
   outline: none;
   border-bottom: 1px solid #0099ff;
+  background-color: #F0F0F0;
 }
 
 /* ---------------------- btns ---------------------- */
 
 .btn__login {
-  height: 3.5rem;
+  height: 4.0rem;
   width: 40rem;
   border-radius: 4rem;
   color: white;
@@ -95,7 +94,6 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
 }
 
 /* ---------------------- animations ---------------------- */
@@ -116,6 +114,22 @@ code {
 
 .input__email, .input__password {
   font-size: 1.5rem;
+}
+
+.to-register {
+  font-size: 1.25rem;
+}
+
+.link__register {
+  color: #0099ff;
+}
+
+.link__forgot-password {
+  color: #0099ff;
+  font-size: 1.25rem;
+  align-self: start;
+  margin: 1.5rem 0 0 0rem;
+  /* margin-top: 1.5rem; */
 }
 
 .btn__login {
