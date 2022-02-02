@@ -33,7 +33,7 @@ export default function Login() {
         appearance: "success",
         autoDismiss: true,
       })
-    } else if(!email || password.length >= 1) {
+    } else if(!email) {
       emailRef.current.focus()
     } else {
       passwordRef.current.focus()
