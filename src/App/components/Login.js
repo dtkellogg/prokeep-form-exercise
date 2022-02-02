@@ -40,7 +40,7 @@ export default function Login() {
     }
 
     setSubmitting(false)
-  }
+  } 
 
   useEffect(()=>{
     emailRef.current.focus();
