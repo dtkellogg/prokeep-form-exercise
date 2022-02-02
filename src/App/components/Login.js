@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { useToasts } from 'react-toast-notifications'
 import axios from 'axios'
 import Loader from "react-loader-spinner";
-import Validate from './Validate'
+import Validate from '../utils/Validate'
 
 
 export default function Login() {
